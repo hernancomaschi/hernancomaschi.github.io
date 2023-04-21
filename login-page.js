@@ -1,4 +1,4 @@
-let selForm, loginTitle, loginForm, loginButton, loginErrorMsg, game1Button;
+let selForm, loginTitle, loginForm, loginButton, loginErrorMsg;
 
 const init = function () {
   selForm = document.getElementById("select-form");
@@ -6,8 +6,6 @@ const init = function () {
   loginForm = document.getElementById("login-form");
   loginButton = document.getElementById("login-form-submit");
   loginErrorMsg = document.getElementById("login-error-msg");
-  // game1Button = document.getElementById("game1-submit");
-  // game1Button.style.visibility = "hidden";
 };
 
 init();
@@ -17,7 +15,7 @@ loginButton.addEventListener("click", (e) => {
   const username = loginForm.username.value;
   const password = loginForm.password.value;
 
-  if (username === "user" && password === "test") {
+  if (username.toLowerCase() === "user" && password.toLowerCase() === "test") {
     window.open("list-of-page.html", "_self");
   } else {
     loginErrorMsg.style.opacity = 1;
