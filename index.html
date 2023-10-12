@@ -1,41 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="login-page.css" />
-    <script defer src="login-page.js"></script>
-  </head>
-
-  <body>
-    <main id="main-holder">
-      <h1 id="login-header">Login</h1>
-
-      <div id="login-error-msg-holder">
-        <p id="login-error-msg">
-          Invalid username
-          <span id="error-msg-second-line">and/or password</span>
-        </p>
+   <head>
+      <title>ComaschiTECH</title>
+      <!--
+         ComaschiTECH main web page
+         Filename: index.html
+      
+         Author:   Hernan Comaschi
+         Date:     October 2023
+         HTML5 and CSS3 Illustrated Independent Project Submission 2
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr.custom.62074.js"></script>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bitter:wght@100;200&family=Playfair+Display:wght@400;900&family=Playfair:ital,opsz,wght@0,5..1200,900;1,5..1200,400&display=swap" rel="stylesheet">
+      <link rel="shortcut" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="icon" sizes="192x192" href="images/android.png">
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <div class="relative">
+               <h1><em>Fasted and Excellent Care for Your Computers</em></h1>
+               <a href="index.html"><img src="images/CTECH.png" width="216" height="146" alt=""></a>
+            </div>
+         </header>
+         <nav class="sitenavigation">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="services.html">Services</a></p>
+            <p><a href="aboutus.html">About Us</a></p>
+            <p><a href="contact.html">Contact</a></p>
+            <p><a href="https://maps.app.goo.gl/sDTz2R6dszDp5VBp8" target="_blank">Directions</a></p>
+         </nav>
+         <article>
+            <h2 id="contentstart"><em>Laptop and Computer Repair</em></h2>
+            <nav class="pagenavigation">
+               <P><a href="#diag">Diagnostic Services</a></P>
+               <P><a href="#hard">Hardware Repair Services</a></P>
+               <P><a href="#sec">Security Services</a></P>
+               <P><a href="#cloud">Cloud Backup Services</a></P>
+            </nav>
+            <p><br><strong>Are you looking for fast and affordable computer repair solutions in Murfreesboro?</strong>
+            <br><br>At <i>Murfreesboro</i>, we understand the inconvenience of computer troubles and work quickly to restore your devices as fast as possible.
+               Our technicians can diagnose and repair a variety of computer issues ranging from cracked screens and slow start-ups to viruses and
+               cloud storage solutions. In addition to our by-appointment services, we are also proud to offer walk-in availability for a variety
+               of same day repair services. Murfreesboro is here to save your mobile life! <a href="Images/Price_List.pdf" target="_new">Check our updated price list.</a> (PDF)</p>
+            <h3 id="diag">Diagnostic Services</h3>
+            <p class="intro">Before we begin to work on your computer, a technician will run a series of diagnostic tests to better understand the condition of your device and to help determine the best course of action to get your computer working properly. You can call to schedule an appointment or drop by a CPR store to talk with a technician.</p>
+            <h3 id="hard">Hardware Repair Services</h3>
+            <p class="intro">If your computer is making noise, running slow, displaying strange messages or not turning on at all, trust CPR for fast, friendly hardware repair services. Our technicians will determine the issue and recommend a repair solution that will get your system back on track while allowing you to stay in control of the costs.</p>
+            <h3 id="sec">Security Services</h3>
+            <p class="intro">As the owner of a computer, laptop, or mobile device, it is your responsibility to make sure you have properly protected your private information with high-quality security solutions. A CPR technician can help you to understand and select the products needed to keep you safe from threats like malware, ransomware, and identity theft.</p>
+            <h3 id="cloud">Cloud Backup Services</h3>
+            <p class="intro">Your backup services are only effective if they are automated, secure and reliable. CPR will make sure you’re prepared with cloud backup services to protect your data from hardware failure and security risks like ransomware.</p>
+         </article>
+         <footer>
+            <p>5002 Motlow College Blvd</p>
+            <p>Smyrna, TN 37167</p>
+            <p>(615) 220-7800</p>
+         </footer>
       </div>
-
-      <form id="login-form">
-        <input
-          type="text"
-          name="username"
-          id="username-field"
-          class="login-form-field"
-          placeholder="Username"
-        />
-        <input
-          type="password"
-          name="password"
-          id="password-field"
-          class="login-form-field"
-          placeholder="Password"
-        />
-        <input type="submit" value="Login" id="login-form-submit" />
-      </form>
-    </main>
-  </body>
+   </body>
 </html>

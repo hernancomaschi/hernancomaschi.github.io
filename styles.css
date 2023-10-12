@@ -1,0 +1,215 @@
+/* 
+   ComaschiTECH style sheet 
+   Filename: styles.css
+
+   Author:   Hernan Comaschi
+   Date:     October 2023
+   HTML5 and CSS3 Illustrated Independent Project Submission s
+*/
+/* reset styles */
+html {
+    font-size: 13px;
+}
+article, body, div, img, figcaption, figure, footer, header, nav, h1, h2, h3, p {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+/* body and page container */
+body {
+    font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+    background: rgb(255, 255, 255);
+    background: url("images/background.png");
+}
+.container {
+    margin: 0 auto;
+    max-width: 1080px; 
+    background-color: rgb(224, 78, 78);
+    top: 1em;
+    box-shadow: 10px 10px 8px 10px #e7adad;
+}
+.relative {
+    position: sticky;
+    top: 0;
+    text-align: right;
+    margin: 1em 0;
+
+  }
+/* headings */
+header {
+    padding: 0 1em;
+    text-align: center;
+    background-color: rgb(224, 78, 78);
+}
+header h1 {
+    padding-top: 0.4em;
+    color: white;
+    font-weight: normal;
+    font-size: 2.6em;
+    line-height: 2.8em;
+    font-weight: bold;
+
+ }
+header div {
+   width: 80%;
+   margin: 0 auto;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+header p {
+   color: black;
+   background-color: white;
+   border: 3px solid black;
+   padding: 6px;
+}
+header img {
+    position: absolute;
+    top: 0.4em;
+    left: 0.8em;
+    height: 120px;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+}
+/* site navigatio */
+nav.sitenavigation {
+    background-color: rgb(224, 78, 78);
+    text-align: center;
+}
+nav.sitenavigation p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+nav.sitenavigation a {
+    display: inline-block;
+    padding: 0.5em 1em;
+}
+nav.sitenavigation a:link {
+    color: rgb(92, 12, 29);
+    text-decoration: none;
+}
+nav.sitenavigation a:visited {
+    color: #eee;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+    color: rgb(92, 12, 29);
+}
+/* main content */
+article {
+   width: 94%; 
+   color: black;
+   background-color: white;
+   text-align: left;
+   margin: 0 auto; 
+   padding-top: 2em;
+   padding-bottom: 1em;
+   padding-left: 1em;
+   padding-right: 1em;
+}
+article p {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    font-family: Verdana, Geneva, sans-serif;
+}
+p.intro::first-letter {
+    color: #050303;
+    font-size: 200%;
+  }
+h2 {
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 0.8em;
+    text-align: center;
+    color: red;
+    margin-top: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 0.3em;
+    color: red;
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0.4em;
+}
+nav.pagenavigation {
+    margin-top: 1em;
+    text-align: center;
+    color: white;
+    background-color: rgb(167, 19, 19);
+    font-size: 1.1em;
+    box-shadow: 5px 5px 3px 5px #e7adad;
+}
+nav.pagenavigation p {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0;
+}
+nav.pagenavigation a:link {
+    text-decoration: none;
+    color: #f0efef;
+}
+nav.pagenavigation a:visited {
+    color: ivory;
+}
+nav.pagenavigation a:hover, nav.pagenavigation a:focus {
+    color: ivory;
+}
+figure {
+    width: 40%;
+    margin: 1em auto;
+    /* border: 2px solid black; */
+}
+figcaption {
+    padding: 0.25em;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+}
+/* footer section */
+footer {
+   border: 16px solid rgb(224, 78, 78);
+   background-color: white;
+   color: black;
+   padding: 0.5em;
+   font-family: Verdana, Geneva, sans-serif;
+   font-weight: bold;
+   font-size: 1em;
+   line-height: 0.8em;
+   text-align: center;
+}
+footer p {
+   margin: 0.4em;
+}
+
+/* print styles */
+@media print {
+    article, article h2, article h3, aside, body, .container, footer, header, header h1, header p{
+        color: #000;
+        background-color: #fff;
+        box-shadow: none;
+        border: none;
+        font-size: 1em;
+        margin: auto;
+    }
+    article {
+        width: 90%
+    }
+    body {
+        max-width: 100%;
+    }
+    nav {
+        display: none;
+    }
+    @page {
+        margin: 1in;
+    }
+}
