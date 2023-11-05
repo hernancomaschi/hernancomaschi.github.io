@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
    <head>
       <title>ComaschiTECH</title>
@@ -37,28 +37,21 @@
             <p><a href="https://maps.app.goo.gl/sDTz2R6dszDp5VBp8" target="_blank">Directions</a></p>
          </nav>
          <article>
-            <h2>About Us</h2>
-            <ul>
-               <li>Mission</li>
-               <p>The mission of ComaschiTECH is to work in partnership with Member Stations to create a more informed public — one challenged and invigorated by a deeper understanding and appreciation of events, ideas and cultures.</p>
-            </ul>
-            <ul>
-               <li>Vision</li>
-               <p>Build the best product, cause no unnecessary harm, and use business to inspire and implement solutions to the environmental crisis.</p>
-            </ul>
-            <ul>
-               <li>Values</li>
-               <p>I will increase my sales output by learning and implementing point-of-sale conversion frameworks. I'll measure success by comparing week-over-week sales growth to median sales across players on my baseball team.</p>
-            </ul>
-            <ul>
-               <li>Goals</li>
-               <p>Our vision is to ensure that veterans are respected for their service, always receive their earned entitlements, and are recognized for the sacrifices they and their loved ones have made on behalf of this great country.</p>
-           </ul>
-            <p></p>
-            <h3></h3>
-            <p></p>
-            <h3></h3>
-            <p></p>
+            <h2>Your form has been submitted</h2>
+            <h3>You entered the following data:</h3>
+      
+            <script>
+                var formData = location.search;
+                formData = formData.substring(1, formData.length);
+                while (formData.indexOf("+") !== -1) {
+                   formData = formData.replace("+", " ");
+                }
+                formData = decodeURIComponent(formData);
+                var formArray = formData.split("&");
+                for (var i = 0; i < formArray.length; i = i + 1) {
+                   document.write("<p>" + formArray[i] + "</p>");
+                }
+            </script>
          </article>
          <footer>
             <p>5002 Motlow College Blvd</p>

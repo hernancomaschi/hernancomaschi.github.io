@@ -10,7 +10,7 @@
 html {
     font-size: 13px;
 }
-article, body, div, img, figcaption, figure, footer, header, nav, h1, h2, h3, p {
+article, body, div, img, figcaption, figure, footer, header, img, section, li, ul, ol, nav, h1, h2, h3, p {
     border: 0;
     padding: 0;
     margin: 0;
@@ -72,7 +72,8 @@ header img {
     margin: 0;
     padding: 0;
 }
-/* site navigatio */
+
+/* site navigation */
 nav.sitenavigation {
     background-color: rgb(224, 78, 78);
     text-align: center;
@@ -96,6 +97,11 @@ nav.sitenavigation a:visited {
 nav.sitenavigation a:hover, nav.sitenavigation a:focus {
     color: rgb(92, 12, 29);
 }
+nav.sitenavigation ul, li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
 /* main content */
 article {
    width: 94%; 
@@ -111,6 +117,12 @@ article {
 article p {
     margin-bottom: 0.5em;
     font-size: 1em;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-left: 0.5em;
+}
+article li {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
     font-family: Verdana, Geneva, sans-serif;
 }
 p.intro::first-letter {
@@ -174,6 +186,26 @@ figcaption {
     text-align: center;
     background-color: white;
 }
+.article-aside-outer-container li {
+    font-size: 1.25em;
+}
+/* main content table */
+table {
+    width: 90%;
+    margin: 1em auto;
+}
+td, th {
+    width: 33.3%;
+    border: 1px solid black;
+    padding: 0.3em 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+th {
+    background-color: rgb(224, 78, 78);
+}
+th.title {
+    background-color: rgb(224, 143, 38);
+}
 /* footer section */
 footer {
    border: 16px solid rgb(224, 78, 78);
@@ -189,7 +221,173 @@ footer {
 footer p {
    margin: 0.4em;
 }
+/* ---------------------------------------------------------------------- */
 
+/* standard screen styles */
+@media screen and (max-width: 1500px) {
+    header {
+        width: auto;
+        max-width: 800px;
+        margin: 0 auto;
+        float: none;
+    }
+    header h1 {
+        width: 60%;
+        margin: 8% 3% 0 3%;
+    }
+    header div {
+        margin: 2% 4% 1%;
+        float: left;
+    }
+    nav.sitenavigation {
+       margin: 0 auto;
+       float: none;
+    }
+}
+/* small screen/tablet styles */
+@media screen and (max-width: 1100px) {
+    article {
+        width: 62.5%;
+    }
+    figure {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+        background-image: none;
+        float: none;
+    }
+    figure img {
+        display: block;
+    }
+    aside {
+        width: 33.5%;
+    }
+}
+/* handheld styles */
+@media screen and (max-width: 800px) {
+    header {
+        margin: 0 95px 0 0;
+        float: left;
+    }
+    header h1 {
+        width: auto;
+        margin: 0.4em 2%;
+        float: left;
+    }
+    header div {
+        display: none;
+    }
+    nav.sitenavigation {
+        margin: 16px;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+    .navigation-menu-button {
+        display: block;
+        float: right;
+    }
+    nav.sitenavigation ul {
+        display: none;
+        position: fixed;
+        top: 8.5%;
+        right: 15px;
+        z-index: 2;
+    }
+    nav.sitenavigation li {
+        margin: 0;
+        border: none;
+        display: block;
+        text-align: left;
+        border-radius: 0%;
+    }
+    nav.sitenavigation a {
+        width: 83%;
+        border-radius: 0%;
+    }
+    aside {
+        display: none;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* field styles */
+.contactinfo input, #stay-nights, textarea {
+    border: 1px solid #ccc;
+    padding: 0.2em;
+    font-size: 1em;
+}
+select {
+    margin-bottom: 0.6em;
+}
+.contactinfo input {
+    position: absolute;
+    left: 5em;
+}
+.schedule input {
+    position: absolute;
+    left: 10em;
+}
+#nameinput, #emailinput {
+    width: 25em;
+}
+#phoneinput {
+    width: 12em;
+}
+#stay-nights {
+    width: 3em;
+}
+#submit {
+    border: none;
+    padding: 0.4em 0.6em;
+    background-color: #e3d5ba;
+    font-size: 1.25em;
+    border-radius: 10px;
+}
+/* label styles */
+label {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+.contactinfo label {
+    display: block;
+    position: relative;
+    margin: 0.8em 0;
+}
+.typeserv label, .typevisit label {
+    margin-right: 1.6em;
+}
+.schedule p {
+    width: 9.2em;
+    float: left;
+}
+.date-picker label {
+    position: absolute;
+    left: -10000px;
+}
+/* form styles */
+form {
+    padding: 10px;
+}
+/* fieldset styles */
+fieldset {
+    margin-bottom: 0.8em;
+}
+fieldset fieldset {
+    margin-top: 1em;
+    padding: 0.8em;
+    border: 1px solid #777;
+}
+legend {
+    font-size: 1.25em;
+}
+.contactinfo legend,
+.reserveinfo > legend,
+.additionalinfo legend {
+    margin-left: -0.1em;
+    font-weight: bold;
+}
 /* print styles */
 @media print {
     article, article h2, article h3, aside, body, .container, footer, header, header h1, header p{
