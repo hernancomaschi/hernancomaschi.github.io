@@ -3,7 +3,7 @@
    Filename: styles.css
 
    Author:   Hernan Comaschi
-   Date:     October 2023
+   Date:     2023
    HTML5 and CSS3 Illustrated Independent Project Submission s
 */
 /* reset styles */
@@ -285,98 +285,7 @@ footer p {
 }
 /* ---------------------------------------------------------------------- */
 
-/* standard screen styles */
-@media screen and (max-width: 800px) {
-    header {
-        width: auto;
-        max-width: 800px;
-        margin: 0 auto;
-        float: none;
-    }
-    header h1 {
-        width: 170%;
-        margin: 8% 3% 0 3%;
-    }
-    header div {
-        margin: 2% 4% 5%;
-        float: left;
-    }
-}
-/* small screen/tablet styles */
-@media screen and (max-width: 800px) {
-    header {
-        width: auto;
-        max-width: 800px;
-        margin: 0 auto;
-        float: right;
-    }
-    header div {
-        margin: 2% 4% 5%;
-        float: left;
-    }
-    article {
-        width: 62.5%;
-    }
-    figure {
-        width: 100%;
-        height: auto;
-        margin-bottom: 1em;
-        background-image: none;
-        float: none;
-    }
-    figure, img {
-        display: none;
-    }
-    aside {
-        width: 33.5%;
-    }
-    header h1 {
-        width: 60%;
-        margin: 8% 3% 0 3%;
-    }
 
-}
-
-/* handheld styles */
-@media screen and (max-width: 800px) {
-    header {
-        margin: 0 95px 0 0;
-        float: left;
-    }
-    header h1 {
-        width: auto;
-        margin: 0.4em 2%;
-        float: left;
-    }
-    header div {
-        display: none;
-    }
-    nav.sitenavigation {
-        margin: 0px;
-        position: absolute;
-    }
-    nav.sitenavigation ul {
-        display: none;
-        position: fixed;
-        top: 8.5%;
-        right: 15px;
-        z-index: 2;
-    }
-    nav.sitenavigation li {
-        margin: 0;
-        border: none;
-        display: block;
-        text-align: left;
-        border-radius: 0%;
-    }
-    nav.sitenavigation a {
-        width: 83%;
-        border-radius: 0%;
-    }
-    aside {
-        display: none;
-    }
-}
 
 /* ---------------------------------------------------------------------- */
 
