@@ -235,45 +235,7 @@ th {
 th.title {
     background-color: rgb(224, 143, 38);
 }
-/* .cover {
-    position: relative;
-    top: -18.7em;
-    left: -36.5em;
-    height: 125px;
-    width: 125px;
-    background-color: rgb(224, 78, 78);
-    opacity: 0;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -webkit-animation-name: show-logo;
-    animation-name: show-logo;
-    
-}
 
-@-webkit-keyframes show-logo {
-    0% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 0.8;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes show-logo {
-    0% {
-        opacity: 1; 
-    }
-    75% {
-        opacity: 0.8;
-    }
-    100% {
-        opacity: 0;
-    }
-} */
 div.fade-in-image img {
     position: relative;
     top: -8em;
