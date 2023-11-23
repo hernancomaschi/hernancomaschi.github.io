@@ -25,9 +25,11 @@
       <div class="container">
          <header>
             <div class="relative">
-               <h1><em>Fasted and Excellent Care for Your Computers</em></h1>
-               <a href="index.html"><img src="images/CTECH.png" width="216" height="146" alt=""></a>
-            </div>
+                <h1><em>Fasted and Excellent Care for Your Computers</em></h1>
+             </div>
+             <div class="fade-in-image">
+                <a href="index.html"><img src="Images/CTECH.png" width="216" height="146" alt=""></a>
+             </div>
          </header>
          <nav class="sitenavigation">
             <p><a href="index.html">Home</a></p>
@@ -39,20 +41,20 @@
          <article>
             <div class="container2">
                <h2>Contact Us</h2>
-               <form action="results.html">
+               <form class="contact-form" action="results.html">
                   <fieldset class="contactinfo">
                       <legend>Contact Information</legend>
                       <label for="nameinput">
                           Name
-                          <input type="text" name="name" id="nameinput" placeholder="First and last name">
+                          <input type="text" name="name" id="nameinput" placeholder="First and last name" required>
                       </label>
                       <label for="emailinput">
                           Email
-                          <input type="text" name="email" id="emailinput" placeholder="address@example.com">
+                          <input type="text" name="email" id="emailinput" placeholder="address@example.com" required>
                       </label>
                       <label for="phoneinput">
                           Phone
-                          <input type="text" name="phone" id="phoneinput">
+                          <input type="text" name="phone" id="phoneinput" required>
                       </label>
                   </fieldset>
                   <fieldset class="reserveinfo">
@@ -152,14 +154,47 @@
                   <fieldset class="additionalinfo">
                       <legend>Additional Information</legend>
                       <label for="feedback">
-                          <textarea name="feedback" id="feedback" rows="4" cols="55">
+                          <textarea name="feedback" id="feedback" rows="4" cols="55" required>
                           </textarea>
                       </label>
                   </fieldset>
-                  <fieldset class="submitbutton5">
+                  <fieldset class="submitbutton">
                       <input type="submit" id="submit" value="Submit">
                   </fieldset>
               </form>
+            <div class="feedback-preview">
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>From: </p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="feedback-from"></p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>Email: </p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="feedback-email"></p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>Phone: </p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="feedback-phone"></p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>Feedback/Question: </p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="feedback-content"></p>
+                    </div>
+                </div>
             </div>
          </article>
          <footer>
@@ -168,5 +203,6 @@
             <p>(615) 220-7800</p>
          </footer>
       </div>
+      <script src="script.js"></script>
    </body>
 </html>
