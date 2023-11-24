@@ -83,8 +83,8 @@ header img {
 nav.sitenavigation {
     background-color: rgb(224, 78, 78);
     /* text-align: center; */
-    width: 18%;
-    padding: 5% 1%;
+    width: 100%;
+    padding: 1% 1%;
     float: right;
     position: relative;
 }
