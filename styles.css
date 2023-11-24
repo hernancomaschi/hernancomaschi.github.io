@@ -83,8 +83,8 @@ header img {
 nav.sitenavigation {
     background-color: rgb(224, 78, 78);
     /* text-align: center; */
-    width: 100%;
-    padding: 1% 1%;
+    width: 18%;
+    padding: 5% 1%;
     float: right;
     position: relative;
 }
@@ -94,6 +94,7 @@ nav.sitenavigation p {
     font-size: 1.5em;
 }
 nav.sitenavigation a {
+    background-color: rgb(224, 78, 78);
     padding: 0.5em 1em;
     display: inline-block;
     border-radius: 6px;
@@ -109,10 +110,11 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
     color: rgb(92, 12, 29);
 }
 nav.sitenavigation ul {
+    background-color: rgb(224, 78, 78);
     display: inline-block;
     font-weight: bold;
     font-size: 1.3em;
-    border: 3px solid rgb(173, 20, 20);
+    /* border: 1px solid rgb(173, 20, 20); */
     display: none;
     position: absolute;
     right: 5%;
@@ -470,6 +472,16 @@ input:focus, textarea:focus {
     }
     section h3, section p {
         text-align: left;
+    }
+    div.navigation-menu-button {
+        display: inline-block;
+    }
+    nav.sitenavigation {
+        background-color: white;
+        top: 3%;
+        /* right: 3%; */
+        width: 10%;
+        padding: 0;
     }
 }
 
