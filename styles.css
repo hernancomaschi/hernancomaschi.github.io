@@ -462,6 +462,17 @@ input:focus, textarea:focus {
  }
 
 /* ---------------------------------------------------------------------- */
+@media screen and (max-width: 752px),  print {
+    div.fade-in-image img {
+        display: block;
+    }
+    header {
+        font-size: 8px;
+    }
+    article h2 {
+        font-size: 30px;
+    }
+}
 /* small screen/tablet styles */
 @media screen and (min-width: 460px),  print {
     article {
@@ -482,6 +493,11 @@ input:focus, textarea:focus {
         /* right: 3%; */
         width: 10%;
         padding: 0;
+    }
+    div.fade-in-image img {
+        position: relative;
+        top: -9em;
+        left: -28.7em;
     }
 }
 
@@ -524,6 +540,11 @@ input:focus, textarea:focus {
         left: 0;
         text-align: right;
     }
+    div.fade-in-image img {
+        position: relative;
+        top: -8em;
+        left: -36em;
+    }
 }
 /* large screen styles */
 @media screen and (min-with: 1060px) {
@@ -539,6 +560,15 @@ input:focus, textarea:focus {
 @media screen and (min-width: 1400px) {
     article div {
         width: 960px;
+    }
+    div.fade-in-image img {
+        position: relative;
+        top: -8em;
+        left: -36em;
+    }
+    article h2 {
+        top: 12px;
+        padding: 2px 2px 2px;
     }
 }
 /* ---------------------------------------------------------------------- */
