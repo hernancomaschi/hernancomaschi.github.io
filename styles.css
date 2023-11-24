@@ -566,10 +566,6 @@ input:focus, textarea:focus {
         top: -8em;
         left: -36em;
     }
-    article h2 {
-        top: 12px;
-        padding: 2px 2px 2px;
-    }
 }
 /* ---------------------------------------------------------------------- */
 /* print styles */
