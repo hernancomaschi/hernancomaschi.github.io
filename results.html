@@ -1,65 +1,67 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>ComaschiTECH</title>
-      <!--
-         ComaschiTECH main web page
-         Filename: index.html
+<head>
+   <title>ComaschiTECH</title>
+   <!--
+      ComaschiTECH main web page
+      Filename: index.html
       
-         Author:   Hernan Comaschi
-         Date:     9/24/2023
-         HTML5 and CSS3 Illustrated Independent Project Submission 1
-      -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <script src="modernizr.custom.62074.js"></script>
-      <link rel="stylesheet" href="styles.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bitter:wght@100;200&family=Playfair+Display:wght@400;900&family=Playfair:ital,opsz,wght@0,5..1200,900;1,5..1200,400&display=swap" rel="stylesheet">
-      <link rel="shortcut" href="images/favicon.ico">
-      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-      <link rel="icon" sizes="192x192" href="images/android.png">
-   </head>
-   <body>
-      <div class="container">
-         <header>
-            <div class="relative">
-               <h1><em>Fasted and Excellent Care for Your Computers</em></h1>
-            </div>
-            <div class="fade-in-image">
-               <a href="index.html"><img src="images/CTECH.png" width="216" height="146" alt=""></a>
-            </div>
-         </header>
-         <nav class="sitenavigation">
-            <p><a href="index.html">Home</a></p>
-            <p><a href="services.html">Services</a></p>
-            <p><a href="aboutus.html">About Us</a></p>
-            <p><a href="contact.html">Contact</a></p>
-            <p><a href="https://maps.app.goo.gl/sDTz2R6dszDp5VBp8" target="_blank">Directions</a></p>
-         </nav>
-         <article>
-            <h2>Your form has been submitted</h2>
-            <h3>You entered the following data:</h3>
-      
-            <script>
-                var formData = location.search;
-                formData = formData.substring(1, formData.length);
-                while (formData.indexOf("+") !== -1) {
-                   formData = formData.replace("+", " ");
-                }
-                formData = decodeURIComponent(formData);
-                var formArray = formData.split("&");
-                for (var i = 0; i < formArray.length; i = i + 1) {
-                   document.write("<p>" + formArray[i] + "</p>");
-                }
-            </script>
-         </article>
-         <footer>
-            <p>5002 Motlow College Blvd</p>
-            <p>Smyrna, TN 37167</p>
-            <p>(615) 220-7800</p>
-         </footer>
-      </div>
-   </body>
+      Author:   Hernan Comaschi
+      Date:     9/24/2023
+      HTML5 and CSS3 Illustrated Independent Project Submission 1
+   -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <script src="modernizr.custom.62074.js"></script>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bitter:wght@100;200&family=Playfair+Display:wght@400;900&family=Playfair:ital,opsz,wght@0,5..1200,900;1,5..1200,400&display=swap" rel="stylesheet">
+   <link rel="shortcut" href="images/favicon.ico">
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   <link rel="icon" sizes="192x192" href="images/android.png">
+</head>
+<body>
+   <div class="container">
+      <header>
+         <div class="relative">
+            <h1><em>Fasted and Excellent Care for Your Computers</em></h1>
+         </div>
+         <div class="fade-in-image">
+            <a href="index.html"><img src="images/CTECH.png" width="216" height="146" alt=""></a>
+         </div>
+      </header>
+      <nav class="sitenavigation">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://maps.app.goo.gl/sDTz2R6dszDp5VBp8" target="_blank">Directions</a></li>
+         </ul>
+      </nav>
+      <article>
+         <h2>Your form has been submitted</h2>
+         <h3>You entered the following data:</h3>
+         
+         <script>
+            var formData = location.search;
+            formData = formData.substring(1, formData.length);
+            while (formData.indexOf("+") !== -1) {
+               formData = formData.replace("+", " ");
+            }
+            formData = decodeURIComponent(formData);
+            var formArray = formData.split("&");
+            for (var i = 0; i < formArray.length; i = i + 1) {
+               document.write("<p>" + formArray[i] + "</p>");
+            }
+         </script>
+      </article>
+      <footer>
+         <p>5002 Motlow College Blvd</p>
+         <p>Smyrna, TN 37167</p>
+         <p>(615) 220-7800</p>
+      </footer>
+   </div>
+</body>
 </html>
