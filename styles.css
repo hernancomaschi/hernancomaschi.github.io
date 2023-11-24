@@ -1,10 +1,10 @@
 /* 
-   ComaschiTECH style sheet 
-   Filename: styles.css
+ComaschiTECH style sheet 
+Filename: styles.css
 
-   Author:   Hernan Comaschi
-   Date:     2023
-   HTML5 and CSS3 Illustrated Independent Project Submission s
+Author:   Hernan Comaschi
+Date:     2023
+HTML5 and CSS3 Illustrated Independent Project Submission s
 */
 /* reset styles */
 html {
@@ -23,7 +23,7 @@ video {
     padding-left: 12%;
     margin-top: 2%;
     margin-bottom: 2%;
- }
+}
 /* body and page container */
 body {
     font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
@@ -55,20 +55,20 @@ header h1 {
     font-size: 2.6em;
     line-height: 2.8em;
     font-weight: bold;
-
- }
+    
+}
 header div {
-   width: 80%;
-   margin: 1em auto;
-   margin-left: auto;
-   margin-right: auto;
+    width: 80%;
+    margin: 1em auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header p {
-   color: black;
-   background-color: white;
-   border: 3px solid black;
-   padding: 6px;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    padding: 6px;
 }
 header img {
     position: relative;
@@ -133,15 +133,15 @@ div.navigation-menu-button {
 }
 /* main content */
 article {
-   width: 94%; 
-   color: black;
-   background-color: white;
-   text-align: left;
-   margin: 0 auto; 
-   padding-top: 2em;
-   padding-bottom: 1em;
-   padding-left: 1em;
-   padding-right: 1em;
+    width: 94%; 
+    color: black;
+    background-color: white;
+    text-align: left;
+    margin: 0 auto; 
+    padding-top: 2em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 article p {
     margin-bottom: 0.5em;
@@ -158,7 +158,7 @@ article li {
 p.intro::first-letter {
     color: #050303;
     font-size: 200%;
-  }
+}
 h2 {
     font-weight: bold;
     font-size: 3em;
@@ -188,13 +188,13 @@ section {
     position: relative;
     background-color: white;
     box-shadow: 0 10px 6px -6px #777;
- }
- /* section p {
+}
+/* section p {
     clear: left;
- } */
- /* section p:first-of-type {
-     display: none;
- } */
+} */
+/* section p:first-of-type {
+    display: none;
+} */
 h3 {
     font-weight: bold;
     font-size: 2em;
@@ -255,25 +255,25 @@ figure img {
     /* position: absolute; */
     bottom: 0;
     right: 0;
- }
- .top-link a {
+}
+.top-link a {
     padding: 3px 6px;
     border: 2px solid #777;
     display: inline-block;
     background-color: #ebf8fa;
     border-radius: 0.6em;
- }
- .top-link a:link {
+}
+.top-link a:link {
     text-decoration: none;
- }
- .top-link a:visited {
+}
+.top-link a:visited {
     color: black;
- }
- .top-link a:hover, .top-link a:focus {
+}
+.top-link a:hover, .top-link a:focus {
     border-color: #34180f;
     color: white;
     background-color: rgb(224, 78, 78);
- }
+}
 
 /* main content table */
 table {
@@ -327,18 +327,18 @@ div.fade-in-image img {
 
 /* footer section */
 footer {
-   border: 16px solid rgb(224, 78, 78);
-   background-color: white;
-   color: black;
-   padding: 0.5em;
-   font-family: Verdana, Geneva, sans-serif;
-   font-weight: bold;
-   font-size: 1em;
-   line-height: 0.8em;
-   text-align: center;
+    border: 16px solid rgb(224, 78, 78);
+    background-color: white;
+    color: black;
+    padding: 0.5em;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 0.8em;
+    text-align: center;
 }
 footer p {
-   margin: 0.4em;
+    margin: 0.4em;
 }
 
 /* field styles */
@@ -440,26 +440,26 @@ input:focus, textarea:focus {
     font-size: 1.3em;
     background-color: white;
     display: none;
- }
- .show {
-     display: block;
- }
- .feedback-preview p {
+}
+.show {
+    display: block;
+}
+.feedback-preview p {
     margin-bottom: 0.3em;
- }
- .table-row {
+}
+.table-row {
     display: table-row;
- }
- .table-row div:first-child {
+}
+.table-row div:first-child {
     font-weight: bold;
- }
- .table-cell {
+}
+.table-cell {
     padding: 0 0.2em;
     display: table-cell;
- }
- .feedback-content {
+}
+.feedback-content {
     padding: 0.4em 0.2em 0;
- }
+}
 
 /* ---------------------------------------------------------------------- */
 @media screen and (max-width: 752px),  print {
