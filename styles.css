@@ -45,6 +45,8 @@ header {
     text-align: center;
     background-color: rgb(224, 78, 78);
     height: 10em;
+    width: 100%;
+    /* float: none; */
 }
 header h1 {
     padding-top: 0.4em;
@@ -80,7 +82,11 @@ header img {
 /* site navigation */
 nav.sitenavigation {
     background-color: rgb(224, 78, 78);
-    text-align: center;
+    /* text-align: center; */
+    width: 18%;
+    padding: 5% 1%;
+    float: right;
+    position: relative;
 }
 nav.sitenavigation p {
     display: inline-block;
@@ -102,16 +108,27 @@ nav.sitenavigation a:visited {
 nav.sitenavigation a:hover, nav.sitenavigation a:focus {
     color: rgb(92, 12, 29);
 }
-nav.sitenavigation ul, li {
+nav.sitenavigation ul {
     display: inline-block;
     font-weight: bold;
     font-size: 1.3em;
+    border: 3px solid rgb(173, 20, 20);
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 70%;
+    z-index: 2;
+}
+nav.sitenavigation li {
+    display: inline-block;
 }
 nav.sitenavigation li:hover {
     transform: scale(1.2);
     transform: translatey(-4px);
 }
-
+div.navigation-menu-button {
+    float: right;
+}
 /* main content */
 article {
    width: 94%; 
@@ -161,7 +178,21 @@ h2 {
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
-
+section {
+    border: 1px solid black;
+    padding: 2% 4% 5em;
+    margin: 2% 0;
+    overflow: auto;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 6px -6px #777;
+ }
+ /* section p {
+    clear: left;
+ } */
+ /* section p:first-of-type {
+     display: none;
+ } */
 h3 {
     font-weight: bold;
     font-size: 2em;
@@ -217,6 +248,30 @@ figure img {
 .article-aside-outer-container li {
     font-size: 1.25em;
 }
+.top-link {
+    margin: 0 4% 4%;
+    /* position: absolute; */
+    bottom: 0;
+    right: 0;
+ }
+ .top-link a {
+    padding: 3px 6px;
+    border: 2px solid #777;
+    display: inline-block;
+    background-color: #ebf8fa;
+    border-radius: 0.6em;
+ }
+ .top-link a:link {
+    text-decoration: none;
+ }
+ .top-link a:visited {
+    color: black;
+ }
+ .top-link a:hover, .top-link a:focus {
+    border-color: #34180f;
+    color: white;
+    background-color: rgb(224, 78, 78);
+ }
 
 /* main content table */
 table {
@@ -283,11 +338,6 @@ footer {
 footer p {
    margin: 0.4em;
 }
-/* ---------------------------------------------------------------------- */
-
-
-
-/* ---------------------------------------------------------------------- */
 
 /* field styles */
 .contactinfo input, #stay-nights, textarea {
@@ -408,6 +458,78 @@ input:focus, textarea:focus {
  .feedback-content {
     padding: 0.4em 0.2em 0;
  }
+
+/* ---------------------------------------------------------------------- */
+/* small screen/tablet styles */
+@media screen and (min-width: 460px),  print {
+    article {
+        padding: 2%;
+    }
+    section {
+        text-align: center;
+    }
+    section h3, section p {
+        text-align: left;
+    }
+}
+
+/* standard screen styles */
+@media screen and (min-width: 880px) {
+    /* h3 {
+        float: left;
+    } */
+    header {
+        float: none;
+        width: auto;
+    }
+    div.navigation-menu-button {
+        display: none;
+    }
+    nav.sitenavigation {
+        width: 100%;
+        padding: 0;
+    }
+    nav.sitenavigation ul {
+        border: none;
+        width: 100%;
+        display: block;
+        position: static;
+        text-align: center;
+    }
+    nav.sitenavigation li {
+        display: inline-block;
+    }
+    figure img {
+        float: none;
+        max-width: 80%;
+        margin: 2% 0 2% 2%;
+    }
+    section {
+        padding-bottom: 2%;
+    }
+    .top-link {
+        right: auto;
+        left: 0;
+        text-align: right;
+    }
+}
+/* large screen styles */
+@media screen and (min-with: 1060px) {
+    figure {
+        margin: 2% 25% 2% 2%;
+    }
+    .top-link {
+        left: auto;
+        right: 0;
+    }
+}
+/* maximum width screen styles */
+@media screen and (min-width: 1400px) {
+    article div {
+        width: 960px;
+    }
+}
+/* ---------------------------------------------------------------------- */
 /* print styles */
 @media print {
     article, article h2, article h3, aside, body, .container, footer, header, header h1, header p{
